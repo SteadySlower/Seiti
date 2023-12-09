@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06EECCE32B24047700A16124 /* seitiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EECCE22B24047700A16124 /* seitiApp.swift */; };
+		06EECCE52B24047700A16124 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EECCE42B24047700A16124 /* ContentView.swift */; };
+		06EECCE72B24047800A16124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EECCE62B24047800A16124 /* Assets.xcassets */; };
+		06EECCEA2B24047800A16124 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EECCE92B24047800A16124 /* Preview Assets.xcassets */; };
+		06EECCEC2B24047800A16124 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EECCEB2B24047800A16124 /* Persistence.swift */; };
+		06EECCEF2B24047800A16124 /* seiti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06EECCED2B24047800A16124 /* seiti.xcdatamodeld */; };
+		06EECCF92B24047800A16124 /* seitiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EECCF82B24047800A16124 /* seitiTests.swift */; };
+		06EECD032B24047800A16124 /* seitiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EECD022B24047800A16124 /* seitiUITests.swift */; };
+		06EECD052B24047800A16124 /* seitiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EECD042B24047800A16124 /* seitiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06EECCF52B24047800A16124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06EECCD72B24047700A16124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06EECCDE2B24047700A16124;
+			remoteInfo = seiti;
+		};
+		06EECCFF2B24047800A16124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06EECCD72B24047700A16124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06EECCDE2B24047700A16124;
+			remoteInfo = seiti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06EECCDF2B24047700A16124 /* seiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EECCE22B24047700A16124 /* seitiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seitiApp.swift; sourceTree = "<group>"; };
+		06EECCE42B24047700A16124 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06EECCE62B24047800A16124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06EECCE92B24047800A16124 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06EECCEB2B24047800A16124 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		06EECCEE2B24047800A16124 /* seiti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = seiti.xcdatamodel; sourceTree = "<group>"; };
+		06EECCF42B24047800A16124 /* seitiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = seitiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EECCF82B24047800A16124 /* seitiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seitiTests.swift; sourceTree = "<group>"; };
+		06EECCFE2B24047800A16124 /* seitiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = seitiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EECD022B24047800A16124 /* seitiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seitiUITests.swift; sourceTree = "<group>"; };
+		06EECD042B24047800A16124 /* seitiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seitiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06EECCDC2B24047700A16124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EECCF12B24047800A16124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EECCFB2B24047800A16124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06EECCD62B24047700A16124 = {
+			isa = PBXGroup;
+			children = (
+				06EECCE12B24047700A16124 /* seiti */,
+				06EECCF72B24047800A16124 /* seitiTests */,
+				06EECD012B24047800A16124 /* seitiUITests */,
+				06EECCE02B24047700A16124 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06EECCE02B24047700A16124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06EECCDF2B24047700A16124 /* seiti.app */,
+				06EECCF42B24047800A16124 /* seitiTests.xctest */,
+				06EECCFE2B24047800A16124 /* seitiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06EECCE12B24047700A16124 /* seiti */ = {
+			isa = PBXGroup;
+			children = (
+				06EECCE22B24047700A16124 /* seitiApp.swift */,
+				06EECCE42B24047700A16124 /* ContentView.swift */,
+				06EECCE62B24047800A16124 /* Assets.xcassets */,
+				06EECCEB2B24047800A16124 /* Persistence.swift */,
+				06EECCED2B24047800A16124 /* seiti.xcdatamodeld */,
+				06EECCE82B24047800A16124 /* Preview Content */,
+			);
+			path = seiti;
+			sourceTree = "<group>";
+		};
+		06EECCE82B24047800A16124 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				06EECCE92B24047800A16124 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06EECCF72B24047800A16124 /* seitiTests */ = {
+			isa = PBXGroup;
+			children = (
+				06EECCF82B24047800A16124 /* seitiTests.swift */,
+			);
+			path = seitiTests;
+			sourceTree = "<group>";
+		};
+		06EECD012B24047800A16124 /* seitiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06EECD022B24047800A16124 /* seitiUITests.swift */,
+				06EECD042B24047800A16124 /* seitiUITestsLaunchTests.swift */,
+			);
+			path = seitiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06EECCDE2B24047700A16124 /* seiti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06EECD082B24047800A16124 /* Build configuration list for PBXNativeTarget "seiti" */;
+			buildPhases = (
+				06EECCDB2B24047700A16124 /* Sources */,
+				06EECCDC2B24047700A16124 /* Frameworks */,
+				06EECCDD2B24047700A16124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = seiti;
+			productName = seiti;
+			productReference = 06EECCDF2B24047700A16124 /* seiti.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06EECCF32B24047800A16124 /* seitiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06EECD0B2B24047800A16124 /* Build configuration list for PBXNativeTarget "seitiTests" */;
+			buildPhases = (
+				06EECCF02B24047800A16124 /* Sources */,
+				06EECCF12B24047800A16124 /* Frameworks */,
+				06EECCF22B24047800A16124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06EECCF62B24047800A16124 /* PBXTargetDependency */,
+			);
+			name = seitiTests;
+			productName = seitiTests;
+			productReference = 06EECCF42B24047800A16124 /* seitiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06EECCFD2B24047800A16124 /* seitiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06EECD0E2B24047800A16124 /* Build configuration list for PBXNativeTarget "seitiUITests" */;
+			buildPhases = (
+				06EECCFA2B24047800A16124 /* Sources */,
+				06EECCFB2B24047800A16124 /* Frameworks */,
+				06EECCFC2B24047800A16124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06EECD002B24047800A16124 /* PBXTargetDependency */,
+			);
+			name = seitiUITests;
+			productName = seitiUITests;
+			productReference = 06EECCFE2B24047800A16124 /* seitiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06EECCD72B24047700A16124 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					06EECCDE2B24047700A16124 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					06EECCF32B24047800A16124 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 06EECCDE2B24047700A16124;
+					};
+					06EECCFD2B24047800A16124 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 06EECCDE2B24047700A16124;
+					};
+				};
+			};
+			buildConfigurationList = 06EECCDA2B24047700A16124 /* Build configuration list for PBXProject "seiti" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06EECCD62B24047700A16124;
+			productRefGroup = 06EECCE02B24047700A16124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06EECCDE2B24047700A16124 /* seiti */,
+				06EECCF32B24047800A16124 /* seitiTests */,
+				06EECCFD2B24047800A16124 /* seitiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06EECCDD2B24047700A16124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EECCEA2B24047800A16124 /* Preview Assets.xcassets in Resources */,
+				06EECCE72B24047800A16124 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EECCF22B24047800A16124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EECCFC2B24047800A16124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06EECCDB2B24047700A16124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EECCEF2B24047800A16124 /* seiti.xcdatamodeld in Sources */,
+				06EECCEC2B24047800A16124 /* Persistence.swift in Sources */,
+				06EECCE52B24047700A16124 /* ContentView.swift in Sources */,
+				06EECCE32B24047700A16124 /* seitiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EECCF02B24047800A16124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EECCF92B24047800A16124 /* seitiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EECCFA2B24047800A16124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EECD032B24047800A16124 /* seitiUITests.swift in Sources */,
+				06EECD052B24047800A16124 /* seitiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06EECCF62B24047800A16124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06EECCDE2B24047700A16124 /* seiti */;
+			targetProxy = 06EECCF52B24047800A16124 /* PBXContainerItemProxy */;
+		};
+		06EECD002B24047800A16124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06EECCDE2B24047700A16124 /* seiti */;
+			targetProxy = 06EECCFF2B24047800A16124 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06EECD062B24047800A16124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06EECD072B24047800A16124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06EECD092B24047800A16124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"seiti/Preview Content\"";
+				DEVELOPMENT_TEAM = ZX72355299;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JWMoon.seiti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06EECD0A2B24047800A16124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"seiti/Preview Content\"";
+				DEVELOPMENT_TEAM = ZX72355299;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JWMoon.seiti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06EECD0C2B24047800A16124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZX72355299;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JWMoon.seitiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/seiti.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/seiti";
+			};
+			name = Debug;
+		};
+		06EECD0D2B24047800A16124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZX72355299;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JWMoon.seitiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/seiti.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/seiti";
+			};
+			name = Release;
+		};
+		06EECD0F2B24047800A16124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZX72355299;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JWMoon.seitiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = seiti;
+			};
+			name = Debug;
+		};
+		06EECD102B24047800A16124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZX72355299;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JWMoon.seitiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = seiti;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06EECCDA2B24047700A16124 /* Build configuration list for PBXProject "seiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EECD062B24047800A16124 /* Debug */,
+				06EECD072B24047800A16124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06EECD082B24047800A16124 /* Build configuration list for PBXNativeTarget "seiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EECD092B24047800A16124 /* Debug */,
+				06EECD0A2B24047800A16124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06EECD0B2B24047800A16124 /* Build configuration list for PBXNativeTarget "seitiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EECD0C2B24047800A16124 /* Debug */,
+				06EECD0D2B24047800A16124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06EECD0E2B24047800A16124 /* Build configuration list for PBXNativeTarget "seitiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EECD0F2B24047800A16124 /* Debug */,
+				06EECD102B24047800A16124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		06EECCED2B24047800A16124 /* seiti.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				06EECCEE2B24047800A16124 /* seiti.xcdatamodel */,
+			);
+			currentVersion = 06EECCEE2B24047800A16124 /* seiti.xcdatamodel */;
+			path = seiti.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 06EECCD72B24047700A16124 /* Project object */;
+}
